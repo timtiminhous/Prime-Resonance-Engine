@@ -1,0 +1,24 @@
+# Minimal ThornList for PrimeResonance - No conflicts
+CactusBase/Boundary
+CactusBase/CartGrid3D
+CactusBase/CoordBase
+CactusBase/IOBasic
+CactusBase/IOUtil
+CactusBase/SymBase
+CactusBase/Time
+
+CactusNumerical/LocalReduce
+CactusNumerical/MoL
+
+CactusPUGH/PUGH
+CactusPUGH/PUGHReduce
+CactusPUGH/PUGHSlab
+
+CactusIO/IOASCII
+
+EinsteinBase/ADMBase
+EinsteinBase/StaticConformal
+EinsteinBase/TmunuBase
+
+# Your thorn
+EdginPhysics/PrimeResonance

@@ -1,0 +1,35 @@
+ActiveThorns = "
+    ADMBase StaticConformal CoordBase CartGrid3D Boundary SymBase TmunuBase
+    Time MoL IOUtil IOBasic IOASCII PrimeResonance PUGH PUGHSlab PUGHReduce LocalReduce
+"
+
+CartGrid3D::type = "coordbase"
+CartGrid3D::domain = "full"
+CartGrid3D::avoid_origin = "no"
+CoordBase::domainsize = "minmax"
+CoordBase::xmin = -10.0
+CoordBase::xmax = 10.0
+CoordBase::ymin = -10.0
+CoordBase::ymax = 10.0
+CoordBase::zmin = -10.0
+CoordBase::zmax = 10.0
+CoordBase::dx = 0.2
+CoordBase::dy = 0.2
+CoordBase::dz = 0.2
+
+Time::dtfac = 0.25
+MoL::ODE_Method = "RK4"
+MoL::MoL_Intermediate_Steps = 4
+MoL::MoL_Num_Scratch_Levels = 1
+Cactus::cctk_itlast = 1000
+
+PrimeResonance::initial_amplitude = 30030.0
+PrimeResonance::pulse_width = 4.0
+TmunuBase::stress_energy_storage = yes
+
+IOUtil::out_dir = "/data/output_A30030"
+IOUtil::out_fileinfo = "none"
+IOBasic::outInfo_every = 10
+IOBasic::outInfo_vars = "PrimeResonance::phi"
+IOASCII::out1D_every = 10
+IOASCII::out1D_vars = "PrimeResonance::phi TmunuBase::eTtt TmunuBase::eTxx"

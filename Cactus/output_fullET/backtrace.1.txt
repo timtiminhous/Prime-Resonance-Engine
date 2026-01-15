@@ -1,0 +1,31 @@
+Backtrace from rank 1 pid 176893:
+1. ./exe/cactus_sim-full(+0x820c54) [0x5e0c0e85dc54]
+2. /usr/lib/libc.so.6(+0x3e4d0) [0x75f7e66844d0]
+3. /usr/lib/libc.so.6(+0x9890c) [0x75f7e66de90c]
+4. /usr/lib/libc.so.6(gsignal+0x20) [0x75f7e66843a0]
+5. /usr/lib/libc.so.6(abort+0x26) [0x75f7e666b57a]
+6. /usr/lib/libc.so.6(__assert_perror_fail+0) [0x75f7e666b4e3]
+7. ./exe/cactus_sim-full(+0x4fae0) [0x5e0c0e08cae0]
+8. ./exe/cactus_sim-full(+0x758b7) [0x5e0c0e0b28b7]
+9. ./exe/cactus_sim-full(+0x379960) [0x5e0c0e3b6960]
+10. ./exe/cactus_sim-full(+0x3779af) [0x5e0c0e3b49af]
+11. ./exe/cactus_sim-full(+0x6fff5) [0x5e0c0e0acff5]
+12. ./exe/cactus_sim-full(+0x80579d) [0x5e0c0e84279d]
+13. ./exe/cactus_sim-full(+0x807e99) [0x5e0c0e844e99]
+14. ./exe/cactus_sim-full(+0x702f3) [0x5e0c0e0ad2f3]
+15. ./exe/cactus_sim-full(+0x77a83) [0x5e0c0e0b4a83]
+16. ./exe/cactus_sim-full(+0x77b03) [0x5e0c0e0b4b03]
+17. ./exe/cactus_sim-full(+0x77b03) [0x5e0c0e0b4b03]
+18. ./exe/cactus_sim-full(+0x77bac) [0x5e0c0e0b4bac]
+19. ./exe/cactus_sim-full(+0x728c5) [0x5e0c0e0af8c5]
+20. ./exe/cactus_sim-full(+0x7b80d9) [0x5e0c0e7f50d9]
+21. ./exe/cactus_sim-full(+0x7b8714) [0x5e0c0e7f5714]
+22. ./exe/cactus_sim-full(+0x7b9fbd) [0x5e0c0e7f6fbd]
+23. ./exe/cactus_sim-full(+0x6a812) [0x5e0c0e0a7812]
+24. /usr/lib/libc.so.6(+0x27635) [0x75f7e666d635]
+25. /usr/lib/libc.so.6(__libc_start_main+0x89) [0x75f7e666d6e9]
+26. ./exe/cactus_sim-full(+0x6b695) [0x5e0c0e0a8695]
+
+The hexadecimal addresses in this backtrace can also be interpreted
+with a debugger (e.g. gdb), or with the 'addr2line' (or 'gaddr2line')
+command line tool: 'addr2line -e cactus_sim <address>'.

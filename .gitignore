@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv
+env/
+
+# Docker
+Dockerfile.dockerignore
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Einstein Toolkit / Cactus Build Artifacts
+# (Adjust this depending on if you want to save the compiled configs or just source)
+Cactus/configs/
+Cactus/exe/
+
+# Editors
+.vscode/
+.idea/
+
+# Sensitive
+.env
+secrets.json
+PrimeResonance_Gold_Build.tar.gz
+PrimeResonance_EinsteinToolkit.tar.gz
