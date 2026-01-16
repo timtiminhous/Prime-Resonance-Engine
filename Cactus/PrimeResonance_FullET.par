@@ -9,6 +9,13 @@ ActiveThorns = "
 Cactus::cctk_itlast = 100
 
 Carpet::domain_from_coordbase = yes
+Carpet::ghost_size = 3
+CoordBase::boundary_size_x_lower = 3
+CoordBase::boundary_size_x_upper = 3
+CoordBase::boundary_size_y_lower = 3
+CoordBase::boundary_size_y_upper = 3
+CoordBase::boundary_size_z_lower = 3
+CoordBase::boundary_size_z_upper = 3
 CartGrid3D::type = "coordbase"
 CoordBase::domainsize = "minmax"
 CoordBase::xmin = -10.0
